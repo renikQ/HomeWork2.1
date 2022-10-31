@@ -4,11 +4,8 @@ public class Human {
     String town;
     String jobTitle;
 
-    public Human(int yearOfBirth, String name, String town, String jobTitle) {
-        this.yearOfBirth = yearOfBirth;
+    public Human(String name) {
         this.name = name;
-        this.town = town;
-        this.jobTitle = jobTitle;
     }
 
     public void welcome() {
