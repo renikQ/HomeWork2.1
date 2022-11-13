@@ -1,7 +1,7 @@
 public class Human {
-    int yearOfBirth;
+    private int yearOfBirth;
     String name;
-    String town;
+    private String town;
     String jobTitle;
 
     public Human(int yearOfBirth, String name, String town, String jobTitle) {
@@ -29,4 +29,23 @@ public class Human {
 
     }
 
+    public int getYearOfBirth() {
+        return yearOfBirth;
+    }
+
+    public void setYearOfBirth(int yearOfBirth) {
+        this.yearOfBirth = Math.max(yearOfBirth, 0);
+    }
+
+    public String getTown() {
+        return town;
+    }
+
+    public void setTown(String town) {
+        if (town == null || town.isEmpty()) {
+            this.town = "Информация не указана";
+        } else {
+            this.town = town;
+        }
+    }
 }

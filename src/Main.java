@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
         Human maxim = new Human(1988, "Максим", "Минск", "бренд-менеджер");
@@ -8,7 +10,7 @@ public class Main {
         katya.welcome();
         Human artem = new Human(1995, "Артём", "Москва", "директор по развитию бизнеса");
         artem.welcome();
-        Human ghost = new Human(-1, null, "", "");
-        ghost.welcome();
+        Human vladimir = new Human(LocalDate.now().getYear()-21, "Владимир", "Казань", "");
+        vladimir.welcome();
     }
 }
